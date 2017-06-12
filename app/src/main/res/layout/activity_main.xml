@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jmontesr.madridshops.activities.MainActivity"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/activity_main__logo"
+        tools:src="@android:drawable/btn_star"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:id="@+id/activity_main__shops_button"
+        tools:text="Shops"
+        android:text="@string/activity_main__shops_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        style="@style/activity_main_button_style"/>
+
+    <Button
+        android:id="@+id/activity_main__activities_button"
+        tools:text="Activities"
+        android:text="@string/activity_main__activities_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        style="@style/activity_main_button_style"/>
+
+</LinearLayout>
