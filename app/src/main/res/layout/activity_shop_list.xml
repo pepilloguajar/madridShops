@@ -7,4 +7,11 @@
     android:layout_height="match_parent"
     tools:context="com.jmontesr.madridshops.activities.ShopListActivity">
 
+        <fragment
+            android:id="@+id/activity_shop_list__fragment_shops"
+            android:name="com.jmontesr.madridshops.fragments.ShopsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_shops"/>
+
 </android.support.constraint.ConstraintLayout>
