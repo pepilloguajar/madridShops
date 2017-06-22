@@ -14,10 +14,21 @@ public class Shops implements ShopsIterable, ShopsUpdatable{
     }
 
 
+
     // lazy getter
     private List<Shop> getShops() {
         if (shops == null){
             shops = new LinkedList<>();
+        }
+        return shops;
+    }
+
+
+    public static Shops from(final List<Shop> shopList) {
+        Shops shops = new Shops();
+
+        for(final Shop shop : shopList){
+            shops.add(shop);
         }
         return shops;
     }
@@ -62,5 +73,6 @@ public class Shops implements ShopsIterable, ShopsUpdatable{
     public void update(Shop newShop, long index) {
         getShops().set((int) index, newShop);
     }
+
 
 }
